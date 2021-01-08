@@ -4,7 +4,7 @@
       <h6 class="title">Upcoming Movies</h6>
     </center>
     <div class="row movies-list">
-      <div class="col-4" v-for="movie in movies" :key="movie.id">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3" v-for="movie in movies" :key="movie.id">
         <Card :title="movie.title" :vote_average="movie.vote_average" :release_date="movie.release_date" :poster_path="movie.poster_path" />
       </div>
     </div>
