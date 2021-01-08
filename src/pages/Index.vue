@@ -8,7 +8,19 @@
 </template>
 
 <script>
+import upcomingMovies from '../services/movies'
+
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+
+  created () {
+    this.fetchUpcomingMovies()
+  },
+
+  methods: {
+    fetchUpcomingMovies () {
+      upcomingMovies()
+    }
+  }
 }
 </script>
