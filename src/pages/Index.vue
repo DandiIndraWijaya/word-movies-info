@@ -1,5 +1,8 @@
 <template>
   <q-page>
+    <center>
+      <h6 class="title">Upcoming Movies</h6>
+    </center>
     <div class="row movies-list">
       <div class="col-4" v-for="movie in movies" :key="movie.id">
         <Card :title="movie.title" :vote_average="movie.vote_average" :release_date="movie.release_date" :poster_path="movie.poster_path" />
@@ -46,6 +49,10 @@ export default {
 </script>
 
 <style>
+
+.title{
+  margin: 0;
+}
 
 .movies-list{
   padding: 5px;
